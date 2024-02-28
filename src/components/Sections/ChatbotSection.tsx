@@ -67,6 +67,7 @@ export const ChatbotPage = React.memo((props: any) => {
         }`
       );
       setUserCred((prev: UserInfo) => {
+        console.log(res.data.data)
         d = [
           ...prev.chat.slice(0, -1),
           {
